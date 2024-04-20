@@ -1,1 +1,1 @@
-# AadityaSrinivasan.github.io
+/AadityaSrinivasan
