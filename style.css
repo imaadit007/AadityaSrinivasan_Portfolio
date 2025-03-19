@@ -5,19 +5,16 @@
     box-sizing: border-box;
 }
 
-body
-{
+body {
     background: #080808;
     color:#fff;
 }
-
 
 html{
     scroll-behavior:smooth;
 }
 
-#header
-{ 
+#header { 
     width:100%;
     height:100vh;
     background-image:url(images/Final.png);
@@ -25,17 +22,18 @@ html{
     background-position:center;
     background-repeat: no-repeat;
 }
+
 .container{
    padding:10px 10%;
-
 }
+
 nav{
     display:flex;
     align-items:center;
     justify-content: space-between;
     flex-wrap: wrap;
-
 }
+
 .logo{
     width:180px;
 }
@@ -81,8 +79,6 @@ nav ul li a:hover::after{
 .header-text h1 span{
     color:#FFD700;
 }
-
-
 
 #about{
     padding:80px 0;
@@ -164,14 +160,13 @@ nav ul li a:hover::after{
     font-size:51px;
 }
 
-
 #services{
     padding:10px 0;
 }
 
 .services-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Display two columns */
+    grid-template-columns: repeat(3, 1fr); /* Display three columns */
     grid-gap: 25px; /* Adjust the gap between items */
     margin-top: 50px;
 }
@@ -185,27 +180,23 @@ nav ul li a:hover::after{
     transition: background 0.5s, transform 0.5s;
 }
 
-
 .services-list div:hover{
     background:indianred;
     transform:translateY(-10px);
 }
+
 .check {
     color:#FFD700;
 }
 
 .logo1 {
-    width: 90px; /* Adjust the width as needed */
-    height: 90px; /* Adjust the height as needed */
-    border-radius: 50%; /* Makes the image circular */
-    border: 2px solid #000; /* Adds a border */
-    margin-bottom: 10px; /* Adjust the margin as needed */
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    margin-bottom: 10px;
     object-fit: cover;
 }
-
-
-
-
 
 .contact-left{
     flex-basis:35%;
@@ -227,9 +218,8 @@ nav ul li a:hover::after{
 }
 
 .social-icons{
-    margin-top:30 px;
+    margin-top:30px;
 }
-
 
 .social-icons a{
     text-decoration:none;
@@ -244,7 +234,6 @@ nav ul li a:hover::after{
 .social-icons a:hover{
     color:#ff004f;
     transform:translateY(-5px);
-
 }
 
 .btnd {
@@ -280,12 +269,8 @@ nav ul li a:hover::after{
     transition: all 0.3s ease;
 }
 
-.
-
-
 .contact-right form{
-    width:100;
-    margin-bottom:35px;
+    width:100%;
 }
 
 form input,form textarea{
@@ -309,14 +294,11 @@ form input,form textarea{
     margin-top:20px;
 }
 
-
 #msg{
     color:#61b752;
     margin-top:-40px;
     display:block;
 }
-
-
 
 .chatBot {
     border: 3px solid #2F8D46;
@@ -331,43 +313,42 @@ form input,form textarea{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     background-repeat: no-repeat;
     background-position: center;
-  }
+}
 
-
-  .chatbox {
+.chatbox {
     padding: 15px;
     list-style: none;
     overflow-y: auto;
     height: 400px;
-  }
+}
    
-  .chatbox li {
+.chatbox li {
     margin-bottom: 10px;
-  }
+}
    
-  .chat p {
+.chat p {
     padding: 10px;
     border-radius: 10px;
     max-width: 70%;
     word-wrap: break-word;
-  }
+}
    
-  .chat-outgoing p {
+.chat-outgoing p {
     background-color: #162887;
     align-self: flex-end;
     color: #fff;
-  }
+}
    
-  .chat-incoming p {
+.chat-incoming p {
     background-color: #eaeaea;
-  }
+}
    
-  .chat-input {
+.chat-input {
     padding: 10px;
     border-top: 1px solid #ccc;
-  }
+}
    
-  .chat-input textarea {
+.chat-input textarea {
     width: 522px;
     padding: 10px;
     border: 1px solid #ccc;
@@ -382,9 +363,9 @@ form input,form textarea{
     margin-top: -10px;
     margin-left: -15px;
     height: 71px;
-  }
+}
    
-  #cross {
+#cross {
     float: right;
     position: relative;
     top: -38px;
@@ -393,19 +374,19 @@ form input,form textarea{
     color: white;
     font-weight: bolder;
     font-size: 28px;
-  }
+}
    
-  #cross:hover {
+#cross:hover {
     color: red;
     transition: all .5s;
-  }
+}
    
-  .chatbox .chat p.error {
+.chatbox .chat p.error {
     color: #ffffff;
     background-color: #ff3737e8;
-  }
+}
    
-  #sendBTN {
+#sendBTN {
     width: 100%;
     padding: 8px;
     border: 0;
@@ -417,12 +398,171 @@ form input,form textarea{
     cursor: pointer;
     color: white;
     margin-top: 12px;
-  }
+}
    
-  .lastMessage {
+.lastMessage {
     margin-top: 50px;
     font-size: 35px;
     font-weight: 600;
     color: darkgreen;
     margin-left: 550px;
-  }
+}
+
+/* Mobile Menu */
+.mobile-menu-btn {
+    display: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Media Queries for Responsive Design */
+
+/* For tablets and smaller screens */
+@media only screen and (max-width: 1024px) {
+    .container {
+        padding: 10px 5%;
+    }
+    
+    .subtitle {
+        font-size: 50px;
+    }
+    
+    .header-text h1 {
+        font-size: 40px;
+    }
+    
+    .services-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%;
+    }
+    
+    .about-col-1 {
+        margin-bottom: 30px;
+    }
+    
+    .tab-links {
+        margin-right: 30px;
+        font-size: 16px;
+    }
+    
+    .contact-left, .contact-right {
+        flex-basis: 100%;
+    }
+    
+    .contact-left {
+        margin-bottom: 30px;
+    }
+    
+    .lastMessage {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+/* For mobile screens */
+@media only screen and (max-width: 768px) {
+    /* Navigation */
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    nav ul {
+        background: #262626;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    
+    nav ul.active {
+        right: 0;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+    
+    /* Header */
+    .header-text {
+        margin-top: 70%;
+        font-size: 20px;
+    }
+    
+    .header-text h1 {
+        font-size: 30px;
+    }
+    
+    /* Sections */
+    .subtitle {
+        font-size: 40px;
+    }
+    
+    .services-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .tab-titles {
+        flex-direction: column;
+    }
+    
+    .tab-links {
+        margin-bottom: 20px;
+    }
+    
+    /* ChatBot */
+    .chatBot {
+        width: 90%;
+        height: 500px;
+    }
+    
+    .chat-input textarea {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .btnd, .btnd1 {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    .lastMessage {
+        font-size: 24px;
+    }
+}
+
+/* For smaller mobile screens */
+@media only screen and (max-width: 480px) {
+    .header-text {
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    
+    .header-text h1 {
+        font-size: 26px;
+    }
+    
+    .subtitle {
+        font-size: 30px;
+    }
+    
+    .sut {
+        font-size: 30px;
+    }
+    
+    .chatBot {
+        height: 400px;
+    }
+    
+    .chatbox {
+        height: 300px;
+    }
+}
